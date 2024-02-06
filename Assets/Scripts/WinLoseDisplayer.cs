@@ -5,6 +5,7 @@ using UnityEngine.UI;
 public class WinLoseDisplayer : MonoBehaviour
 {
     [SerializeField] private bool _isWinDisplay;
+
     private string _countName;
 
     private Text _displayText;

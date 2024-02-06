@@ -1,19 +1,26 @@
 using UnityEngine;
 using UnityEngine.UI;
 
+[RequireComponent(typeof(Text))]
 public class GuessTry : MonoBehaviour
 {
-    [SerializeField] private Text _numberOfTriesText;
     [SerializeField] private GameObject _gameOverScreen;
-    [SerializeField] private int _initialNumberOfTries = 5;
+    [SerializeField] private int _initialNumberOfTries = 7;
     private int _tries;
+
+    private Text _numberOfTriesText;
 
     private void Start()
     {
         _tries = _initialNumberOfTries;
         SetTriesText();
+    }
 
-        GuessButton.Instance.WrongGuess += RemoveOneTry; // GuessButton should awake first
+    private void OnEnable()
+    {
+        _numberOfTriesText = GetComponent<Text>();
+
+        GuessButton.Instance.WrongGuess += RemoveOneTry;
     }
 
     private void OnDisable()

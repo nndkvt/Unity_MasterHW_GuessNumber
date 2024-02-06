@@ -1512,7 +1512,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31d20c803d80e5342824215a2d96b492, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _numberOfTriesText: {fileID: 964240232}
   _gameOverScreen: {fileID: 403404297}
   _initialNumberOfTries: 7
 --- !u!1 &976287505
@@ -1728,7 +1727,7 @@ GameObject:
   - component: {fileID: 1349751169}
   - component: {fileID: 1349751168}
   m_Layer: 5
-  m_Name: AnswerText
+  m_Name: GuessOrNotText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2250,7 +2249,7 @@ GameObject:
   - component: {fileID: 1668302457}
   - component: {fileID: 1668302460}
   m_Layer: 5
-  m_Name: SubmitButton
+  m_Name: GuessButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

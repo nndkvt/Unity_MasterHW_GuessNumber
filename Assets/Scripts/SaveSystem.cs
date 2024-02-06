@@ -1,15 +1,14 @@
 using UnityEngine;
 
+public delegate void VoidDelegate();
+
 public static class SaveSystem
 {
     private static readonly string _winCountName = "WinCount";
     private static readonly string _loseCountName = "LoseCount";
 
-    public delegate void WinAddedDelegate();
-    public static event WinAddedDelegate WinAdded;
-
-    public delegate void LoseAddedDelegate();
-    public static event LoseAddedDelegate LoseAdded;
+    public static event VoidDelegate WinAdded;
+    public static event VoidDelegate LoseAdded;
 
     public static void AddWin()
     {

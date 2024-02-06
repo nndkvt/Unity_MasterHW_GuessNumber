@@ -11,8 +11,7 @@ public class GuessButton : MonoBehaviour, IPointerClickHandler
 
     public static GuessButton Instance;
 
-    public delegate void NumberGuessWrong();
-    public event NumberGuessWrong WrongGuess;
+    public event VoidDelegate WrongGuess;
 
     private void Awake()
     {
